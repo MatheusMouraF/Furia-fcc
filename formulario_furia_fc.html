@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Jogador - FURIA FC</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1e144f;
+      color: #f5f5f5;
+      padding: 2rem;
+    }
+    h1 {
+      color: #d4af37;
+    }
+    form {
+      background-color: #2a1f63;
+      padding: 2rem;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: auto;
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+      border-radius: 5px;
+      border: none;
+    }
+    button {
+      margin-top: 2rem;
+      background-color: #d4af37;
+      color: #1e144f;
+      border: none;
+      padding: 0.75rem 2rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #b8952f;
+    }
+  </style>
+</head>
+<body>
+  <h1>Cadastro de Jogador – FURIA FC</h1>
+  <form>
+    <label for="nome">Nome completo</label>
+    <input type="text" id="nome" name="nome" required>
+
+    <label for="apelido">Apelido (caso tenha)</label>
+    <input type="text" id="apelido" name="apelido">
+
+    <label for="nascimento">Data de nascimento</label>
+    <input type="date" id="nascimento" name="nascimento" required>
+
+    <label for="idade">Idade</label>
+    <input type="number" id="idade" name="idade" min="10" max="99">
+
+    <label for="altura">Altura (cm)</label>
+    <input type="number" id="altura" name="altura">
+
+    <label for="peso">Peso (kg)</label>
+    <input type="number" id="peso" name="peso">
+
+    <label for="perna">Com qual perna você chuta?</label>
+    <select id="perna" name="perna">
+      <option value="direita">Direita</option>
+      <option value="esquerda">Esquerda</option>
+      <option value="ambas">Ambas</option>
+    </select>
+
+    <label for="posicao">Posição preferida</label>
+    <select id="posicao" name="posicao">
+      <option value="goleiro">Goleiro</option>
+      <option value="zagueiro">Zagueiro</option>
+      <option value="lateral">Lateral</option>
+      <option value="volante">Volante</option>
+      <option value="meia">Meia</option>
+      <option value="atacante">Atacante</option>
+      <option value="ponta">Ponta</option>
+      <option value="outra">Outra</option>
+    </select>
+
+    <label for="experiencia">Nível de experiência</label>
+    <select id="experiencia" name="experiencia">
+      <option value="iniciante">Iniciante</option>
+      <option value="intermediario">Intermediário</option>
+      <option value="avancado">Avançado</option>
+      <option value="regular">Joga em time regularmente</option>
+    </select>
+
+    <label for="telefone">Telefone / WhatsApp</label>
+    <input type="tel" id="telefone" name="telefone" required>
+
+    <label for="instagram">Instagram (opcional)</label>
+    <input type="text" id="instagram" name="instagram">
+
+    <label for="endereco">Endereço (bairro ou cidade)</label>
+    <input type="text" id="endereco" name="endereco">
+
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
